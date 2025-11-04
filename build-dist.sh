@@ -29,16 +29,15 @@ When activated, use *help to see available commands.
 
 EOF
 
-# Add orchestrator
+# Add orchestrator (extract from existing dist if it exists, otherwise create default)
 echo "Adding orchestrator..."
-cat >> "$TEMP_FILE" << 'EOF'
-==================== START: .bmad-core/expansion-packs/idea-validator/orchestrator.md ====================
-EOF
-cat /tmp/orchestrator-extract.md | sed '1d;$d' >> "$TEMP_FILE"
-cat >> "$TEMP_FILE" << 'EOF'
-==================== END: .bmad-core/expansion-packs/idea-validator/orchestrator.md ====================
-
-EOF
+if [ -f "$OUTPUT_FILE" ]; then
+    # Extract orchestrator from existing bundle
+    sed -n '/START: \.bmad-core\/expansion-packs\/idea-validator\/orchestrator.md/,/END: \.bmad-core\/expansion-packs\/idea-validator\/orchestrator.md/p' "$OUTPUT_FILE" >> "$TEMP_FILE"
+    echo "" >> "$TEMP_FILE"
+else
+    echo "Warning: No existing orchestrator found. You'll need to add it manually or use an existing bundle."
+fi
 
 # Add agents
 for agent in validator-analyst market-fit founder-alignment distribution-strategy report-generator; do

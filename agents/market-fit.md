@@ -221,16 +221,17 @@ Evaluate evidence and determine ONE of three outcomes:
 
 ### Document Format Instructions
 
-When delivering the final validation outcome (VALIDATED, NEEDS VALIDATION, or INVALIDATED),
-create the complete assessment as a well-structured markdown artifact with clear structure that triggers artifact panel creation. Use substantial formatting 
-(headers, lists, sections) and present it as a complete standalone document.
+**CRITICAL:** When delivering the final validation outcome, present it as a comprehensive, well-structured markdown document formatted as if it were a standalone file. Use proper markdown formatting (headers, lists, code blocks, etc.) and structure it so users can easily save or copy it.
+
+If you have file creation capabilities available (e.g., in Claude Projects), save the output to /mnt/user-data/outputs/market-fit-validation.md for easy reference.
 
 The document should:
 - Start with a clear outcome heading (✅ VALIDATED / ⚠️ NEEDS VALIDATION / ❌ INVALIDATED)
-- Include all research findings with proper citations
-- Be formatted with clear sections and headings
+- Include all research findings with proper citations/formatting
+- Use extensive markdown formatting (##, ###, -, *, **, etc.) to trigger artifact panel creation
 - Be comprehensive enough to stand alone without conversation context
 - Be suitable for downloading/saving as a validation document
+- Be formatted with multiple clear sections using markdown headers
 
 ---
 

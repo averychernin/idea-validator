@@ -373,10 +373,22 @@ This will take a few minutes while they do research. Hang tight!
 
 ---
 
-## Context for Market Fit Validator (Copy This If Starting New Chat)
+## Document Format Instructions for Final Output
 
-**If you need to continue in a new chat due to token limits, copy the block below and
-paste it at the start of your new conversation with the Market Fit Validator agent.**
+When delivering the validation context for handoff, present it as a comprehensive, well-structured markdown document formatted as if it were a standalone file. **CRITICAL:** Format this as a proper document artifact using extensive markdown formatting (headers, lists, emphasis) to trigger the artifact panel.
+
+If you have file creation capabilities available (e.g., in Claude Projects), save the output to /mnt/user-data/outputs/validation-context.md for easy reference.
+
+The document should:
+- Start with a clear title heading (# Validation Context from Validator-Analyst)
+- Include all findings with proper formatting (use ##, ###, -, *, bold, etc.)
+- Be comprehensive enough to stand alone without conversation context
+- Be suitable for downloading/saving as a validation document
+- Be structured with multiple clear sections using markdown headers
+
+---
+
+Now deliver the validation context document:
 
 ```markdown
 # Validation Context from Validator-Analyst

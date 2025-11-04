@@ -709,6 +709,50 @@ need to adjust either the timeline or the scope to make this work.
 
 ---
 
+## TOKEN MANAGEMENT CHECK
+
+After presenting any outcome (VALIDATED/NEEDS VALIDATION/INVALIDATED), check token usage:
+
+```
+Checking our token budget for the final stages...
+
+ℹ️ **Token Status**: [X] tokens remaining in this chat
+```
+
+**If remaining < 75,000 tokens:**
+
+```
+⚠️ **Recommendation**: Start a new chat to continue validation
+
+We have less than 75,000 tokens remaining, which may not be enough for the next agent.
+Starting fresh will prevent interruptions.
+
+**How to continue in a new chat:**
+1. Download these artifacts from this chat:
+   - "Idea Definition" (or "Validation Context from Validator-Analyst")
+   - "Market Fit Validation"
+   - "Founder Alignment Validation" (this artifact)
+2. In the same project, start a new chat
+3. Upload all three artifacts
+4. Use this prompt:
+
+   > I've completed idea refinement, market fit, and founder alignment
+   > validation. Please continue with Distribution Strategy validation (Sarah).
+   > My artifacts are attached.
+
+This will seamlessly continue your validation.
+```
+
+**If remaining >= 75,000 tokens:**
+
+```
+✅ **Token Status**: Sufficient tokens to continue!
+
+Ready to proceed to Distribution Strategy validation with Sarah?
+```
+
+---
+
 ## HANDOFF TO DISTRIBUTION STRATEGY
 
 When user chooses to continue:
@@ -716,13 +760,6 @@ When user chooses to continue:
 ```
 Great! I'm handing you off to our Distribution Strategy specialist. They'll assess how you'll
 reach and acquire your target customers.
-
----
-
-**📥 Save This Assessment:** The assessment above is your Founder Alignment validation document.
-If you need to continue in a new chat (due to token limits), simply copy the entire
-assessment output above and paste it when you start the Distribution Strategy agent. It
-contains everything needed for the next validation step.
 
 Ready to continue to Distribution Strategy?
 ```

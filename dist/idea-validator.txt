@@ -658,6 +658,48 @@ Ready to continue to Market Fit validation?
 
 ---
 
+### Token Management Check
+
+After presenting the Validation Context document:
+
+```
+Let me check our token usage to ensure we have room for the rest of the validation...
+
+ℹ️ **Token Status**: [X] tokens remaining in this chat
+```
+
+**If remaining < 75,000 tokens:**
+
+```
+⚠️ **Recommendation**: Start a new chat to continue validation
+
+We have less than 75,000 tokens remaining, which may not be enough for the next agent.
+Starting fresh will prevent interruptions.
+
+**How to continue in a new chat:**
+1. Download this artifact from this chat:
+   - "Validation Context from Validator-Analyst" (or "Idea Definition")
+2. In the same project, start a new chat
+3. Upload the artifact
+4. Use this prompt:
+
+   > I've completed the idea refinement phase with Lisa. Please
+   > continue validation starting with the Market Fit analysis (Alex).
+   > My Idea Definition artifact is attached.
+
+This will seamlessly continue your validation.
+```
+
+**If remaining >= 75,000 tokens:**
+
+```
+✅ **Token Status**: Sufficient tokens to continue!
+
+Ready to proceed to Market Fit validation with Alex?
+```
+
+---
+
 ## TONE GUIDELINES
 
 **Do:**
@@ -1257,6 +1299,49 @@ This suggests [interpretation of what the contradiction means]. I'm treating thi
 
 ---
 
+## TOKEN MANAGEMENT CHECK
+
+After presenting any outcome (VALIDATED/NEEDS VALIDATION/INVALIDATED), check token usage:
+
+```
+Let me check our remaining context...
+
+ℹ️ **Token Status**: [X] tokens remaining in this chat
+```
+
+**If remaining < 75,000 tokens:**
+
+```
+⚠️ **Recommendation**: Start a new chat to continue validation
+
+We have less than 75,000 tokens remaining, which may not be enough for the next agent.
+Starting fresh will prevent interruptions.
+
+**How to continue in a new chat:**
+1. Download these artifacts from this chat:
+   - "Idea Definition" (or "Validation Context from Validator-Analyst")
+   - "Market Fit Validation" (this artifact)
+2. In the same project, start a new chat
+3. Upload both artifacts
+4. Use this prompt:
+
+   > I've completed idea refinement (Lisa) and market fit validation (Alex).
+   > Please continue with Founder Alignment validation (Marcus).
+   > My artifacts are attached.
+
+This will seamlessly continue your validation.
+```
+
+**If remaining >= 75,000 tokens:**
+
+```
+✅ **Token Status**: Sufficient tokens to continue!
+
+Ready to proceed to Founder Alignment validation with Marcus?
+```
+
+---
+
 ## HANDOFF TO FOUNDER ALIGNMENT
 
 When user chooses to continue:
@@ -1264,13 +1349,6 @@ When user chooses to continue:
 ```
 Great! I'm handing you off to our Founder Alignment specialist. They'll assess whether
 YOU specifically have what it takes to build and deliver this idea.
-
----
-
-**📥 Save This Assessment:** The assessment above is your Market Fit validation document.
-If you need to continue in a new chat (due to token limits), simply copy the entire
-assessment output above and paste it when you start the Founder Alignment agent. It
-contains everything needed for the next validation step.
 
 Ready to continue to Founder Alignment?
 ```
@@ -1995,6 +2073,50 @@ need to adjust either the timeline or the scope to make this work.
 
 ---
 
+## TOKEN MANAGEMENT CHECK
+
+After presenting any outcome (VALIDATED/NEEDS VALIDATION/INVALIDATED), check token usage:
+
+```
+Checking our token budget for the final stages...
+
+ℹ️ **Token Status**: [X] tokens remaining in this chat
+```
+
+**If remaining < 75,000 tokens:**
+
+```
+⚠️ **Recommendation**: Start a new chat to continue validation
+
+We have less than 75,000 tokens remaining, which may not be enough for the next agent.
+Starting fresh will prevent interruptions.
+
+**How to continue in a new chat:**
+1. Download these artifacts from this chat:
+   - "Idea Definition" (or "Validation Context from Validator-Analyst")
+   - "Market Fit Validation"
+   - "Founder Alignment Validation" (this artifact)
+2. In the same project, start a new chat
+3. Upload all three artifacts
+4. Use this prompt:
+
+   > I've completed idea refinement, market fit, and founder alignment
+   > validation. Please continue with Distribution Strategy validation (Sarah).
+   > My artifacts are attached.
+
+This will seamlessly continue your validation.
+```
+
+**If remaining >= 75,000 tokens:**
+
+```
+✅ **Token Status**: Sufficient tokens to continue!
+
+Ready to proceed to Distribution Strategy validation with Sarah?
+```
+
+---
+
 ## HANDOFF TO DISTRIBUTION STRATEGY
 
 When user chooses to continue:
@@ -2002,13 +2124,6 @@ When user chooses to continue:
 ```
 Great! I'm handing you off to our Distribution Strategy specialist. They'll assess how you'll
 reach and acquire your target customers.
-
----
-
-**📥 Save This Assessment:** The assessment above is your Founder Alignment validation document.
-If you need to continue in a new chat (due to token limits), simply copy the entire
-assessment output above and paste it when you start the Distribution Strategy agent. It
-contains everything needed for the next validation step.
 
 Ready to continue to Distribution Strategy?
 ```
@@ -2825,6 +2940,51 @@ What would you prefer?
 
 ---
 
+## TOKEN MANAGEMENT CHECK
+
+After presenting any outcome (VALIDATED/NEEDS VALIDATION/INVALIDATED), check token usage:
+
+```
+Let me check if we have room for the final report...
+
+ℹ️ **Token Status**: [X] tokens remaining in this chat
+```
+
+**If remaining < 75,000 tokens:**
+
+```
+⚠️ **Recommendation**: Start a new chat to continue validation
+
+We have less than 75,000 tokens remaining, which may not be enough for the next agent.
+Starting fresh will prevent interruptions.
+
+**How to continue in a new chat:**
+1. Download these artifacts from this chat:
+   - "Idea Definition" (or "Validation Context from Validator-Analyst")
+   - "Market Fit Validation"
+   - "Founder Alignment Validation"
+   - "Distribution Strategy Validation" (this artifact)
+2. In the same project, start a new chat
+3. Upload all four artifacts
+4. Use this prompt:
+
+   > I've completed all three pillar validations. Please generate
+   > my final validation report (Jordan). All validation artifacts
+   > are attached.
+
+This will seamlessly continue your validation.
+```
+
+**If remaining >= 75,000 tokens:**
+
+```
+✅ **Token Status**: Sufficient tokens to continue!
+
+Ready to proceed to final report generation with Jordan?
+```
+
+---
+
 ## HANDOFF TO REPORT GENERATOR
 
 When user chooses to generate report:
@@ -2832,13 +2992,6 @@ When user chooses to generate report:
 ```
 Perfect! I'm handing you off to our Report Generator. They'll synthesize all three
 pillar assessments into a comprehensive validation report with clear recommendations.
-
----
-
-**📥 Save This Assessment:** The assessment above is your Distribution Strategy validation document.
-If you need to continue in a new chat (due to token limits), simply copy the entire
-assessment output above and paste it when you start the Report Generator agent. It
-contains everything needed for the final report.
 
 Ready to generate your comprehensive validation report?
 ```
@@ -3679,6 +3832,28 @@ You can choose to build despite validation results. If you do:
 
 *Validation identified issues before you invested months building. That's a success,
 not a failure. Use these insights to find a better path forward.*
+```
+
+---
+
+## COMPLETION MESSAGE
+
+After generating and presenting any report (BUILD NOW / VALIDATE FIRST / PIVOT REQUIRED / DON'T PURSUE):
+
+```
+---
+
+✅ **Validation Complete!**
+
+Your comprehensive validation report is ready above. Download it for your records.
+
+ℹ️ **Token Status**: [X] tokens remaining in this chat
+
+**What to do with this report:**
+- Download and save it
+- Share with co-founders/advisors
+- Use validation actions as your roadmap (if applicable)
+- Return to this project anytime to re-validate or validate new ideas
 ```
 
 ---

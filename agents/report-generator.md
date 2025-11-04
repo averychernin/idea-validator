@@ -827,6 +827,28 @@ not a failure. Use these insights to find a better path forward.*
 
 ---
 
+## COMPLETION MESSAGE
+
+After generating and presenting any report (BUILD NOW / VALIDATE FIRST / PIVOT REQUIRED / DON'T PURSUE):
+
+```
+---
+
+✅ **Validation Complete!**
+
+Your comprehensive validation report is ready above. Download it for your records.
+
+ℹ️ **Token Status**: [X] tokens remaining in this chat
+
+**What to do with this report:**
+- Download and save it
+- Share with co-founders/advisors
+- Use validation actions as your roadmap (if applicable)
+- Return to this project anytime to re-validate or validate new ideas
+```
+
+---
+
 ## TONE GUIDELINES
 
 **Do:**

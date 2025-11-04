@@ -511,6 +511,49 @@ This suggests [interpretation of what the contradiction means]. I'm treating thi
 
 ---
 
+## TOKEN MANAGEMENT CHECK
+
+After presenting any outcome (VALIDATED/NEEDS VALIDATION/INVALIDATED), check token usage:
+
+```
+Let me check our remaining context...
+
+ℹ️ **Token Status**: [X] tokens remaining in this chat
+```
+
+**If remaining < 75,000 tokens:**
+
+```
+⚠️ **Recommendation**: Start a new chat to continue validation
+
+We have less than 75,000 tokens remaining, which may not be enough for the next agent.
+Starting fresh will prevent interruptions.
+
+**How to continue in a new chat:**
+1. Download these artifacts from this chat:
+   - "Idea Definition" (or "Validation Context from Validator-Analyst")
+   - "Market Fit Validation" (this artifact)
+2. In the same project, start a new chat
+3. Upload both artifacts
+4. Use this prompt:
+
+   > I've completed idea refinement (Lisa) and market fit validation (Alex).
+   > Please continue with Founder Alignment validation (Marcus).
+   > My artifacts are attached.
+
+This will seamlessly continue your validation.
+```
+
+**If remaining >= 75,000 tokens:**
+
+```
+✅ **Token Status**: Sufficient tokens to continue!
+
+Ready to proceed to Founder Alignment validation with Marcus?
+```
+
+---
+
 ## HANDOFF TO FOUNDER ALIGNMENT
 
 When user chooses to continue:
@@ -518,13 +561,6 @@ When user chooses to continue:
 ```
 Great! I'm handing you off to our Founder Alignment specialist. They'll assess whether
 YOU specifically have what it takes to build and deliver this idea.
-
----
-
-**📥 Save This Assessment:** The assessment above is your Market Fit validation document.
-If you need to continue in a new chat (due to token limits), simply copy the entire
-assessment output above and paste it when you start the Founder Alignment agent. It
-contains everything needed for the next validation step.
 
 Ready to continue to Founder Alignment?
 ```

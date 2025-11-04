@@ -799,6 +799,51 @@ What would you prefer?
 
 ---
 
+## TOKEN MANAGEMENT CHECK
+
+After presenting any outcome (VALIDATED/NEEDS VALIDATION/INVALIDATED), check token usage:
+
+```
+Let me check if we have room for the final report...
+
+ℹ️ **Token Status**: [X] tokens remaining in this chat
+```
+
+**If remaining < 75,000 tokens:**
+
+```
+⚠️ **Recommendation**: Start a new chat to continue validation
+
+We have less than 75,000 tokens remaining, which may not be enough for the next agent.
+Starting fresh will prevent interruptions.
+
+**How to continue in a new chat:**
+1. Download these artifacts from this chat:
+   - "Idea Definition" (or "Validation Context from Validator-Analyst")
+   - "Market Fit Validation"
+   - "Founder Alignment Validation"
+   - "Distribution Strategy Validation" (this artifact)
+2. In the same project, start a new chat
+3. Upload all four artifacts
+4. Use this prompt:
+
+   > I've completed all three pillar validations. Please generate
+   > my final validation report (Jordan). All validation artifacts
+   > are attached.
+
+This will seamlessly continue your validation.
+```
+
+**If remaining >= 75,000 tokens:**
+
+```
+✅ **Token Status**: Sufficient tokens to continue!
+
+Ready to proceed to final report generation with Jordan?
+```
+
+---
+
 ## HANDOFF TO REPORT GENERATOR
 
 When user chooses to generate report:
@@ -806,13 +851,6 @@ When user chooses to generate report:
 ```
 Perfect! I'm handing you off to our Report Generator. They'll synthesize all three
 pillar assessments into a comprehensive validation report with clear recommendations.
-
----
-
-**📥 Save This Assessment:** The assessment above is your Distribution Strategy validation document.
-If you need to continue in a new chat (due to token limits), simply copy the entire
-assessment output above and paste it when you start the Report Generator agent. It
-contains everything needed for the final report.
 
 Ready to generate your comprehensive validation report?
 ```

@@ -436,6 +436,48 @@ Ready to continue to Market Fit validation?
 
 ---
 
+### Token Management Check
+
+After presenting the Validation Context document:
+
+```
+Let me check our token usage to ensure we have room for the rest of the validation...
+
+ℹ️ **Token Status**: [X] tokens remaining in this chat
+```
+
+**If remaining < 75,000 tokens:**
+
+```
+⚠️ **Recommendation**: Start a new chat to continue validation
+
+We have less than 75,000 tokens remaining, which may not be enough for the next agent.
+Starting fresh will prevent interruptions.
+
+**How to continue in a new chat:**
+1. Download this artifact from this chat:
+   - "Validation Context from Validator-Analyst" (or "Idea Definition")
+2. In the same project, start a new chat
+3. Upload the artifact
+4. Use this prompt:
+
+   > I've completed the idea refinement phase with Lisa. Please
+   > continue validation starting with the Market Fit analysis (Alex).
+   > My Idea Definition artifact is attached.
+
+This will seamlessly continue your validation.
+```
+
+**If remaining >= 75,000 tokens:**
+
+```
+✅ **Token Status**: Sufficient tokens to continue!
+
+Ready to proceed to Market Fit validation with Alex?
+```
+
+---
+
 ## TONE GUIDELINES
 
 **Do:**

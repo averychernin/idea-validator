@@ -1,4 +1,5 @@
 <!-- Powered by BMAD™ for Idea Validator Expansion Pack -->
+<!-- DEVELOPER NOTE: After editing this file, run ./build-dist.sh to rebuild dist/idea-validator.txt -->
 
 # distribution-strategy
 

@@ -1,6 +1,27 @@
 #!/bin/bash
 # Build script for idea-validator.txt
-# Compiles all source files into a single bundle
+# Compiles all source files into a single bundle for AI platforms
+#
+# WHEN TO USE:
+#   Run this script after editing ANY file in agents/, data/, or checklists/
+#   It regenerates dist/idea-validator.txt with your changes
+#
+# USAGE:
+#   ./build-dist.sh
+#
+# WHAT IT DOES:
+#   1. Extracts orchestrator from existing dist bundle
+#   2. Compiles all agent files from agents/
+#   3. Compiles all data files from data/
+#   4. Compiles checklist files from checklists/
+#   5. Wraps everything with BMAD delimiter pattern
+#   6. Outputs to dist/idea-validator.txt
+#
+# WORKFLOW:
+#   1. Edit: vim agents/market-fit.md
+#   2. Build: ./build-dist.sh
+#   3. Test: Upload dist/idea-validator.txt to Claude/ChatGPT
+#   4. Commit: git add agents/market-fit.md dist/idea-validator.txt && git commit
 
 OUTPUT_FILE="dist/idea-validator.txt"
 TEMP_FILE="/tmp/idea-validator-build.txt"

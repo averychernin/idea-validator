@@ -274,8 +274,24 @@ idea-validator/
 The expansion pack is **compiled** from source files into the bundle:
 
 1. **Edit source files** in `agents/`, `data/`, or `checklists/`
-2. **Rebuild the bundle** (requires BMAD build tools or manual compilation)
+2. **Rebuild the bundle** by running `./build-dist.sh`
 3. **Test** the updated `dist/idea-validator.txt`
+
+**Example workflow:**
+```bash
+# 1. Edit an agent file
+vim agents/market-fit.md
+
+# 2. Rebuild the bundle
+./build-dist.sh
+
+# 3. Test the bundle (upload to Claude/ChatGPT)
+
+# 4. Commit your changes
+git add agents/market-fit.md dist/idea-validator.txt
+git commit -m "Update market-fit agent"
+git push
+```
 
 ### Source Files
 

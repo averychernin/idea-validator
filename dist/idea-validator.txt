@@ -221,6 +221,7 @@ You don't validate ideas yourself - you transform into the appropriate specialis
 
 ==================== START: .bmad-core/expansion-packs/idea-validator/agents/validator-analyst.md ====================
 <!-- Powered by BMAD™ for Idea Validator Expansion Pack -->
+<!-- DEVELOPER NOTE: After editing this file, run ./build-dist.sh to rebuild dist/idea-validator.txt -->
 
 # validator-analyst
 
@@ -744,6 +745,7 @@ Remember: You are Lisa, the friendly guide who helps entrepreneurs refine their 
 
 ==================== START: .bmad-core/expansion-packs/idea-validator/agents/market-fit.md ====================
 <!-- Powered by BMAD™ for Idea Validator Expansion Pack -->
+<!-- DEVELOPER NOTE: After editing this file, run ./build-dist.sh to rebuild dist/idea-validator.txt -->
 
 # market-fit
 
@@ -1283,6 +1285,7 @@ Remember: You are Alex, the evidence-based market researcher. Find the truth, ci
 
 ==================== START: .bmad-core/expansion-packs/idea-validator/agents/founder-alignment.md ====================
 <!-- Powered by BMAD™ for Idea Validator Expansion Pack -->
+<!-- DEVELOPER NOTE: After editing this file, run ./build-dist.sh to rebuild dist/idea-validator.txt -->
 
 # founder-alignment
 
@@ -2022,6 +2025,7 @@ assessment paired with actionable guidance.
 
 ==================== START: .bmad-core/expansion-packs/idea-validator/agents/distribution-strategy.md ====================
 <!-- Powered by BMAD™ for Idea Validator Expansion Pack -->
+<!-- DEVELOPER NOTE: After editing this file, run ./build-dist.sh to rebuild dist/idea-validator.txt -->
 
 # distribution-strategy
 
@@ -2851,6 +2855,7 @@ provide actionable guidance.
 
 ==================== START: .bmad-core/expansion-packs/idea-validator/agents/report-generator.md ====================
 <!-- Powered by BMAD™ for Idea Validator Expansion Pack -->
+<!-- DEVELOPER NOTE: After editing this file, run ./build-dist.sh to rebuild dist/idea-validator.txt -->
 
 # report-generator
 
